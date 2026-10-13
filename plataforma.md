@@ -8,11 +8,11 @@
 
 - plataforma: Skip
 - projeto_id: 62151
-- url_producao: https://crmhigia-581c7.goskip.app (ainda sem publicação — só serve após publish)
+- url_producao: https://crmhigia-581c7.goskip.app
 - url_preview: https://crmhigia-581c7--preview.goskip.app
-- versao_aplicada: nenhuma (nada foi aplicado ainda)
-- versao_publicada: nenhuma (nada foi publicado ainda)
-- ultima_task: nenhuma
+- versao_aplicada: 4aae7ec (0.0.5)
+- versao_publicada: 4aae7ec em 2026-10-13T20:44:50Z
+- ultima_task: ed14fa15 (concluída 13/10/2026)
 - espelho: `codigo/` guarda a última versão de cada arquivo alterado pelas tasks. É cópia de
   consulta; a fonte executável é o Skip. Nunca edite o espelho para mudar o sistema.
 
@@ -32,3 +32,4 @@
 | Data | Task | Versão publicada | Arquivos alterados |
 |---|---|---|---|
 | 13/10/2026 | — (rota configurar) | nenhuma | `plataforma.md` criado |
+| 13/10/2026 | ed14fa15 (usuários e papéis) | 4aae7ec em 13/10/2026 20:44 UTC | migration 0001 (schema+regras), 0002 (usuários), login, guardas, layout |
