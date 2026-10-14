@@ -7,7 +7,19 @@ import Index from './pages/Index'
 import NotFound from './pages/NotFound'
 import Login from './pages/Login'
 import SemPermissao from './pages/SemPermissao'
-import Admin from './pages/Admin'
+import AdminLayout from './pages/admin/AdminLayout'
+import AdminInicio from './pages/admin/AdminInicio'
+import Produtos from './pages/admin/Produtos'
+import Icps from './pages/admin/Icps'
+import Pipelines from './pages/admin/Pipelines'
+import Cadencias from './pages/admin/Cadencias'
+import Modelos from './pages/admin/Modelos'
+import Configuracao from './pages/admin/Configuracao'
+import Usuarios from './pages/admin/Usuarios'
+import Alertas from './pages/admin/Alertas'
+import Execucoes from './pages/admin/Execucoes'
+import Eventos from './pages/admin/Eventos'
+import Questionario from './pages/admin/Questionario'
 import Layout from './components/Layout'
 import Guard from './components/Guard'
 
@@ -23,7 +35,20 @@ const App = () => (
         <Route path="/login" element={<Login />} />
         <Route element={<Layout />}>
           <Route path="/" element={<Guard filhos={<Index />} />} />
-          <Route path="/admin/*" element={<Guard filhos={<Admin />} exigeAdmin={true} />} />
+          <Route path="/admin" element={<Guard filhos={<AdminLayout />} exigeAdmin={true} />}>
+            <Route index element={<AdminInicio />} />
+            <Route path="produtos" element={<Produtos />} />
+            <Route path="icps" element={<Icps />} />
+            <Route path="pipelines" element={<Pipelines />} />
+            <Route path="cadencias" element={<Cadencias />} />
+            <Route path="modelos" element={<Modelos />} />
+            <Route path="configuracao" element={<Configuracao />} />
+            <Route path="usuarios" element={<Usuarios />} />
+            <Route path="alertas" element={<Alertas />} />
+            <Route path="execucoes" element={<Execucoes />} />
+            <Route path="eventos" element={<Eventos />} />
+            <Route path="questionario" element={<Questionario />} />
+          </Route>
           {/* ADD ALL CUSTOM ROUTES MUST BE ADDED HERE */}
         </Route>
         <Route path="*" element={<NotFound />} />
