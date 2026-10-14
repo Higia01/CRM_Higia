@@ -1,5 +1,7 @@
 // Task ffe9ee34 (SPEC-1-001): configuração, alertas, execuções, eventos, questionário e os
 // ganchos de teste. Componentes não chamam o pb direto: tudo por aqui.
+// Correção do teste humano 14/10: salvarConfiguracao envia só o valor — versão, autor e
+// histórico passam a ser gravados pelo servidor (hook configuracao_update).
 
 import type { RecordModel } from 'pocketbase'
 import pb from '@/lib/pocketbase/client'
@@ -58,7 +60,7 @@ export function mensagemErroAdmin(erro: unknown, acao: string): string {
 export const listarConfiguracao = () =>
   pb.collection<ConfigItem>('configuracao').getFullList({ sort: 'chave' })
 
-export const salvarConfiguracao = (id: string, dados: { valor: unknown; autor: string; versao: number; historico: ConfigItem['historico'] }) =>
+export const salvarConfiguracao = (id: string, dados: { valor: unknown }) =>
   pb.collection<ConfigItem>('configuracao').update(id, dados)
 
 /** Pausa geral pela rota própria da SPEC (admin ou gestor). */
