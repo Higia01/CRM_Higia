@@ -1,6 +1,8 @@
-// Task 34655984 (SPEC-1-002): fila de clínicas — lista com nota, status, filtros por status,
-// busca, paginação e cards no celular. Acesso: admin/gestor/sdr (licitação não vê).
-// Complementos 15/10 (pedidos do Igor): botão "Início" (e3262a7); contêiner (b67cdc3); UF como
-// sigla (PI/CE/MA/SP); coluna Origem (CNES = captada / Planilha = lead do time importada);
-// paginação com seletor direto "Ir para a página" (a janela de números não atendeu) (fa7d040).
-// (Espelho de referência — conteúdo completo no projeto Skip 62151, versão fa7d040.)
+// Task 34655984 (SPEC-1-002): fila de clínicas — lista com nota, status, filtros, busca,
+// paginação e cards no celular. Acesso: admin/gestor/sdr (licitação não vê).
+// Complementos 15/10 (Igor): botão Início; contêiner; UF como sigla; coluna Origem; seletor
+// direto de página.
+// Complemento 16/10 (Igor): filtros de município (lista da base), CNPJ (com/sem), canal válido
+// (com/sem, RN-10 com a lista de domínios pessoais) e faixa de nota (≥60, 40–59, <40) + botão
+// "Limpar filtros"; filtros aplicados sobre a página carregada (itensFiltrados).
+// (Espelho de referência — conteúdo completo no projeto Skip 62151, versão 8516b36.)
