@@ -1,3 +1,3 @@
-// Task 34655984 (SPEC-1-002): home com botões "Clínicas" e "Administração" (só para quem tem
-// permissão — decisão do Igor 15/10).
-// (Espelho de referência — conteúdo completo no projeto Skip 62151, versão 2769b5c.)
+// src/pages/Index.tsx — home (espelho)
+// Task b19368a9: card "Caixa de trabalho" (Inbox) para sdr/admin/gestor antes de Clínicas.
+// (Espelho — conteúdo completo no projeto Skip 62151, versão f5fb573.)

@@ -1,3 +1,3 @@
-// Task 34655984 (SPEC-1-002): rotas /clinicas e /clinica/:id no router; navegação pós-login
-// (admin/gestor/licitação → /admin; sdr → /clinicas — decisão do Igor 15/10).
-// (Espelho de referência — conteúdo completo no projeto Skip 62151, versão 2769b5c.)
+// src/App.tsx — rotas (espelho)
+// Task b19368a9: adicionadas a rota /caixa (Caixa.tsx, Guard sem exigeAdmin) e o import.
+// (Espelho — conteúdo completo no projeto Skip 62151, versão f5fb573.)
